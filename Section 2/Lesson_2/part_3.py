@@ -69,7 +69,7 @@
 # word1 ='airdrop'
 # word2 = 'KYC'
 #
-# if word1.lower() and word2.lower() in text.lower():
+# if word1.lower() in text.lower() and word2.lower() in text.lower():
 #     print('Take the project on notice')
 # else:
 #     print('You can skip the project ')
