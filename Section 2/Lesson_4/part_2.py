@@ -64,21 +64,21 @@
 
 # task 5
 
-# text = input('Enter a string : ')
-#
-# char = list(text)
-#
-# count_all_letter = 0
-# count = 0
-#
-# for i in char:
-#     if i.isalpha():
-#         count_all_letter += 1
-#     if i == 'о' or i == 'а' or i == 'е' or i == 'и' or i == 'у' or i == 'я' or i == 'ы' or i == 'э' or i == 'ю' or i == 'ё':
-#         count += 1
-# print(f'Number of all letters - {count_all_letter}')
-# print(f'Number of vowel letters - {count}')
-# print(f'Number of consonant letters - {count_all_letter - count}')
+text = input('Enter a string : ')
+
+char = list(text)
+
+count_all_letter = 0
+count = 0
+
+for i in char:
+    if i.isalpha():
+        count_all_letter += 1
+    if i == 'о' or i == 'а' or i == 'е' or i == 'и' or i == 'у' or i == 'я' or i == 'ы' or i == 'э' or i == 'ю' or i == 'ё':
+        count += 1
+print(f'Number of all letters - {count_all_letter}')
+print(f'Number of vowel letters - {count}')
+print(f'Number of consonant letters - {count_all_letter - count}')
 
 # task 6
 
@@ -97,26 +97,26 @@
 
 # task 7
 
-# numbers = input('Enter numbers separated by a space : ')
-#
-# lst = numbers.split()
-# print(lst)
-#
-# max_element = int(lst[0])
-# min_element = int(lst[0])
-# position_max = 0
-# position_min = 0
-#
-# for i in range(len(lst)):
-#     if int(lst[i]) < min_element:
-#         min_element = int(lst[i])
-#         position_min = i
-#     if int(lst[i]) > max_element:
-#         max_element = int(lst[i])
-#         position_max = i
-#
-# temp = lst[position_max]
-# lst[position_max] = lst[position_min]
-# lst[position_min] = temp
-#
-# print(lst)
+numbers = input('Enter numbers separated by a space : ')
+
+lst = numbers.split()
+print(lst)
+
+max_element = int(lst[0])
+min_element = int(lst[0])
+position_max = 0
+position_min = 0
+
+for i in range(len(lst)):
+    if int(lst[i]) < min_element:
+        min_element = int(lst[i])
+        position_min = i
+    if int(lst[i]) > max_element:
+        max_element = int(lst[i])
+        position_max = i
+
+temp = lst[position_max]
+lst[position_max] = lst[position_min]
+lst[position_min] = temp
+
+print(lst)
